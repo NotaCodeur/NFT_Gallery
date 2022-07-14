@@ -1,17 +1,19 @@
 import React from "react";
-import { useState } from "react";
-import meta from "./meta.json";
-
-// name is attributes[0].name + attributes[0].name + attributes[0].name
+import meta from "./meta.tsx";
 
 function setNamee(props) {
   if (props.index >= 0) {
     const index = props.index;
-    console.log("props: ", props);
+    console.log("img: ", index + 1, props.image);
+    console.log(
+      "meta: ",
+      index + 1,
+      meta[index].attributes.map((i) => i.name)
+    );
     // console.log("index: ", index);
 
     for (let i = 0; i < meta.length; i++) {
-      if (i == index) {
+      if (i === index) {
         name =
           meta[index].attributes[0].name +
           " " +

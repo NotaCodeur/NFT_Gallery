@@ -2,7 +2,7 @@ import * as React from "react";
 import { render } from "react-dom";
 import { Frame, Page } from "framer";
 import "./styles.css";
-import images from "./images.json";
+import images from "./images.tsx";
 
 import Card from "./Card";
 
